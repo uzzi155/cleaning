@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>RDT Cleaning Company</title>
+  <title>R.D.T.C. Cleaning Company</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,8 +16,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../Business site/css/normalize.css">
-  <link rel="stylesheet" href="../Business site/css/main.css">
+  <link rel="stylesheet" href="../Business/css/normalize.css">
+  <link rel="stylesheet" href="../Business/css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -25,13 +25,14 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div id="header" class="flex-container">
-    <img id="logo" src="../Business site/img/green-cleaning.png">
-    <nav>
-      <span><a href="#services">Cleaning Services</a></span>
+  <div class="header">
+    <img id="logo" src="../Business/img/green-cleaning.png" alt="logo">
+    <div class="navbar">
+      <span><a href="#banner">Cleaning Services</a></span>
       <span><a href="#about">About</a></span>
-      <span><a href="#contact">Contact</a></span>
-    </nav>
+      <span><a href="#team">Our Team</a></span>
+      <span><a href="#contact">Contact</a></span> 
+    </div>
   </div>
   <div id="main" class="grid">
     <div class="banner">
@@ -51,41 +52,62 @@
         </div>
       </div>
       <div class="container">
-        <img src="../Business site/img/decontamination.jpg" alt="" class="service_images">
+        <img src="../Business/img/decontamination.jpg" alt="" class="service_images">
         <div class="text_services">
           <h2>Decontamination Cleaning</h2>
           <p>While thankfully rare, sometimes incidents happen that require a complete decontamination clean.</p>
         </div>
       </div>
       <div class="container">
-        <img src="../Business site/img/blood.jpg" alt="blood" class="service_images">
+        <img src="../Business/img/blood.jpg" alt="blood" class="service_images">
         <div class="text_services">
           <h2>Blood & Bodily Fluid Removal & Deep Cleaning</h2>
           <p>While thankfully rare, incidents often arise that require cleaning and decontamination of blood and bodily fluids. These
           situations require specialist cleaning to ensure the area is properly disinfected and deep cleaned.</p>
         </div>
       </div>
-    </div>   
-    <div class="about">
-      <div class="despre">
-        <div class="column">
-          <div class="cristina">
-            <img src="img/cristina.jpg" alt="cristina">
-          </div>
-        </div>
-        <div class="column">
-          <div class="text">
-            <h2>We Are Trusted</h2>
+    </div>
+    <div id="about">
+      <div class="content-wrapper">
+        <h2>We Are Trusted</h2>
+        <article>
+          <div class="descriere">
             <p>Our team of experienced technicians work use the latest hygiene technology to deliver a high standard of cleaning
-            you
-            your premises.
-        
+            you your premises.
             Our specialist cleaning processes, and equipment are designed to tackle even the toughest jobs. We get even the most
-           hard-to-reach places to ensure a thorough cleanse and sparkling finish.</p>
+            hard-to-reach places to ensure a thorough cleanse and sparkling finish.</p>
+          </div>
+          <figure>
+            <img src="../Business/img/cristina.jpg" alt="cristina">
+          </figure>
+        </article>
+      </div>
+    </div>
+      <div id="team">
+        <h2>Our Team</h2>
+        <div id="featured" class="flex-container">
+          <div class="member">
+            <img src="../Business/img/raz.jpg" alt="razvan">
+            <h3 class="ocupatie">Razvan Paicu</h3>
+            <h4>C.E.O. - Founder and Principal Investor</h4>
+          </div>
+          <div class="member">
+            <img src="../Business/img/dan.jpg" alt="dan">
+            <h3 class="ocupatie">Enuca Daniel</h3>
+            <h4>Partner - Research & Development</h4>
+          </div>
+          <div class="member">
+            <img src="../Business/img/dudu.jpg" alt="dudu">
+            <h3 class="ocupatie">Tiby Dudu</h3>
+            <h4>Omul Bun la Toate <br> ( Fane )</h4>
           </div>
         </div>
       </div>
-    </div>
+      <div id="contact">
+        <h2>The R.D.T.C. Experience</h2>
+        <h5>introduction@vcexperience.investors</h5>
+        <h5>555-867-5309</h5>
+      </div>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

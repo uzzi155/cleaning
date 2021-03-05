@@ -20,8 +20,18 @@ html {
   padding: 0;
   margin: 0;
 }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 * {
   box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 
@@ -117,8 +127,10 @@ body {
    width: 100%;
    
    background-color: white;
-   z-index: 1;
+   z-index: 3;
    align-items: center;
+   align-content: center;
+   justify-content: space-around;
  }
 
  #logo {
@@ -127,13 +139,14 @@ body {
    
  }
 
- nav {
-   text-align: center;
-   display: block;
-   }
+ .navbar {
+   display: flex;
+   justify-content: space-around;
+   margin: 0 10%;
+ }
 
  nav span {
-   
+   padding: 20px 10px;
    margin: auto;
    display: inline-block;
  }
@@ -188,36 +201,90 @@ h2 {
   padding-top: 20px;
 }
 /*         ABout               */
-
-
-.about {
-  margin: 15px;
-  
+#about {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  z-index: 1;
+}
+.about h2 {
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
-.row {
+#about article {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
+}
+figure img {
+  height: 300px;
+  width: auto;
+}
+#about h2 {
+  width: 85%;
+  position: center;
+}
+
+#about article figure,
+#about article div {
+  width: auto;
+}
+
+
+/*     Our Team                 */
+
+#team img {
+  height: 200px;
+  width: auto;
+  margin: 20px;
+  display: block;
+}
+#featured {
+  background-image: url("https://content.codecademy.com/PRO/independent-practice-projects/flexbox-business-site/img/blurred-road.jpg");
+  padding-top: 5px;
+  display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: center;
+}
+.member {
+  padding: 10px;
+  color: white;
+  flex-basis: 280px;
+}
+.member img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+}
+h3 {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+h4 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: whitesmoke;
+}
+h5 {
+  color: black;
 }
 
-.cristina {
-  float: right;
-  height: 100px;
-}
 
-.text {
-  
-  height: 100px;
-}
+/*        Contact                    */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
